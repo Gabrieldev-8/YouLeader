@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="YouLeader - Plataforma digital para fortalecer el liderazgo emocional en equipos de call center. Feedback, reconocimiento y análisis del clima laboral en tiempo real.">
+  <meta name="keywords" content="liderazgo emocional, call center, clima laboral, feedback, reconocimiento, RRHH">
+  <meta name="author" content="YouLeader">
+  <meta name="robots" content="index, follow">
+  <title>YouLeader | Liderazgo emocional en Call Centers</title>
+  
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==================== HEADER PROFESIONAL CON MENÚ Y CONTADOR ==================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a href="#inicio" class="logo">
+        <div class="logo-mark">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4L4 12L16 20L28 12L16 4Z" fill="url(#gradient)" stroke="none"/>
+            <path d="M4 16L16 24L28 16" stroke="url(#gradient)" stroke-width="2" fill="none"/>
+            <path d="M4 22L16 30L28 22" stroke="url(#gradient)" stroke-width="2" fill="none"/>
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F05A2B"/>
+                <stop offset="100%" stop-color="#F7931E"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">You<span class="logo-highlight">Leader</span></span>
+      </a>
+      
+      <!-- Navegación Principal -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#plataforma" class="nav-link">Plataforma</a></li>
+          <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+          <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Botón Demo y Contador de Visitas -->
+      <div class="header-actions">
+        <a href="#contacto" class="btn-demo">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Demo gratuita</span>
+        </a>
+        
+        <!-- CONTADOR DE VISITAS - ESQUINA SUPERIOR DERECHA -->
+        <div class="visit-counter">
+          <div class="counter-icon">
+            <i class="fas fa-chart-simple"></i>
+          </div>
+          <div class="counter-info">
+            <span class="counter-label">Visitas</span>
+            <span class="counter-number" id="visitCounter">0</span>
+          </div>
+        </div>
+        
+        <!-- Menú Hamburguesa (Móvil) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Menú Móvil Desplegable -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+          <li><a href="#plataforma" class="mobile-nav-link">Plataforma</a></li>
+          <li><a href="#beneficios" class="mobile-nav-link">Beneficios</a></li>
+          <li><a href="#testimonios" class="mobile-nav-link">Testimonios</a></li>
+          <li><a href="#contacto" class="mobile-nav-link btn-mobile-demo">Solicitar Demo</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION MEJORADA ==================== -->
+  <section id="inicio" class="hero">
+    <!-- Badge Flotante -->
+    <div class="hero-badge-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Plataforma líder en CX · Nueva generación</span>
+      </div>
+    </div>
+    
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Transformando el<br>
+          <span class="hero-gradient">liderazgo emocional</span><br>
+          en equipos de call center
+        </h1>
+        
+        <p class="hero-description">
+          YouLeader es una plataforma digital diseñada para mejorar la motivación, comunicación y reconocimiento 
+          dentro de los equipos de trabajo mediante herramientas de feedback emocional y análisis del clima laboral.
+        </p>
+        
+        <div class="hero-cta-group">
+          <a href="#plataforma" class="btn-primary btn-lg">
+            <span>Conoce la plataforma</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contacto" class="btn-outline btn-lg">
+            <i class="fas fa-play-circle"></i>
+            <span>Ver demo</span>
+          </a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-value">+87%</div>
+            <div class="stat-label">mejora en clima laboral</div>
+            <div class="stat-trend up"><i class="fas fa-arrow-up"></i> +12% vs 2025</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-value">-42%</div>
+            <div class="stat-label">reducción de rotación</div>
+            <div class="stat-trend up"><i class="fas fa-arrow-up"></i> efectividad comprobada</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-value">24/7</div>
+            <div class="stat-label">monitoreo emocional</div>
+            <div class="stat-trend">tiempo real</div>
+          </div>
+        </div>
+        
+        <!-- Clientes/Confianza -->
+        <div class="trust-badge">
+          <div class="trust-text">
+            <i class="fas fa-check-circle"></i>
+            <span>+50 empresas confían en YouLeader</span>
+          </div>
+          <div class="trust-avatars">
+            <div class="avatar">T</div>
+            <div class="avatar">M</div>
+            <div class="avatar">C</div>
+            <div class="avatar">A</div>
+            <div class="avatar-more">+46</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="visual-container">
+          <!-- Dashboard Principal -->
+          <div class="dashboard-main">
+            <div class="dashboard-header">
+              <div class="dashboard-title">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard Emocional</span>
+              </div>
+              <div class="dashboard-date">Esta semana</div>
+            </div>
+            
+            <!-- Gráfico Principal -->
+            <div class="dashboard-chart-area">
+              <div class="chart-bars">
+                <div class="chart-bar" style="height: 65px"><span>Lun</span></div>
+                <div class="chart-bar" style="height: 78px"><span>Mar</span></div>
+                <div class="chart-bar" style="height: 82px"><span>Mié</span></div>
+                <div class="chart-bar" style="height: 71px"><span>Jue</span></div>
+                <div class="chart-bar" style="height: 88px"><span>Vie</span></div>
+                <div class="chart-bar" style="height: 75px"><span>Sáb</span></div>
+              </div>
+            </div>
+            
+            <!-- Métricas Clave -->
+            <div class="dashboard-metrics">
+              <div class="metric-item">
+                <div class="metric-info">
+                  <span>Empatía</span>
+                  <span class="metric-value">85%</span>
+                </div>
+                <div class="metric-bar"><div class="metric-fill" style="width: 85%"></div></div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-info">
+                  <span>Comunicación</span>
+                  <span class="metric-value">78%</span>
+                </div>
+                <div class="metric-bar"><div class="metric-fill" style="width: 78%"></div></div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-info">
+                  <span>Reconocimiento</span>
+                  <span class="metric-value">92%</span>
+                </div>
+                <div class="metric-bar"><div class="metric-fill" style="width: 92%"></div></div>
+              </div>
+            </div>
+            
+            <!-- Alerta Emocional -->
+            <div class="dashboard-alert">
+              <i class="fas fa-bell"></i>
+              <div class="alert-content">
+                <strong>Alerta preventiva</strong>
+                <span>Equipo "Ventas Norte" - -15% motivación</span>
+              </div>
+              <button class="alert-action">Ver más</button>
+            </div>
+          </div>
+          
+          <!-- Tarjetas Flotantes -->
+          <div class="floating-card fc-1">
+            <i class="fas fa-heart"></i>
+            <div class="fc-content">
+              <strong>+45%</strong>
+              <span>Reconocimiento</span>
+            </div>
+          </div>
+          <div class="floating-card fc-2">
+            <i class="fas fa-smile-wink"></i>
+            <div class="fc-content">
+              <strong>8.7</strong>
+              <span>NPS Equipo</span>
+            </div>
+          </div>
+          <div class="floating-card fc-3">
+            <i class="fas fa-trophy"></i>
+            <div class="fc-content">
+              <strong>Top 10%</strong>
+              <span>Clima laboral</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Wave Decorativo -->
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="white"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==================== PLATAFORMA / CÓMO FUNCIONA ==================== -->
+  <section id="plataforma" class="platform">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="fas fa-cogs"></i>
+          <span>Plataforma inteligente</span>
+        </div>
+        <h2>¿Cómo funciona <span class="gradient-text">YouLeader</span>?</h2>
+        <p>Cinco módulos integrados para transformar la gestión emocional de tu equipo</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-star-of-life"></i></div>
+          <h3>Valoración de líderes</h3>
+          <p>Evaluación semanal en 4 ejes clave: Motivación, Empatía, Comunicación y Reconocimiento.</p>
+          <div class="feature-meta">⭐ 4.8/5 · +1200 evaluaciones</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-chart-simple"></i></div>
+          <h3>Dashboard emocional</h3>
+          <p>Visualización en tiempo real del clima laboral, satisfacción y feedback del equipo.</p>
+          <div class="feature-meta">📊 Métricas predictivas</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-hand-peace"></i></div>
+          <h3>Reconocimiento positivo</h3>
+          <p>Espacio colaborativo para compartir experiencias y destacar buenas prácticas.</p>
+          <div class="feature-meta">🏆 +2,300 reconocimientos</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-comment-dots"></i></div>
+          <h3>Frases motivacionales</h3>
+          <p>Mensajes personalizados según el estado emocional y logros del colaborador.</p>
+          <div class="feature-meta">✨ IA generativa</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-bell"></i></div>
+          <h3>Alertas emocionales</h3>
+          <p>Detección temprana de equipos con baja motivación para acciones preventivas.</p>
+          <div class="feature-meta">⚠️ Prevención proactiva</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BENEFICIOS ==================== -->
+  <section id="beneficios" class="benefits">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="fas fa-chart-line"></i>
+          <span>Impacto medible</span>
+        </div>
+        <h2>Beneficios para <span class="gradient-text">toda la organización</span></h2>
+        <p>Resultados que transforman la experiencia del colaborador y los KPIs del negocio</p>
+      </div>
+      
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fas fa-user-astronaut"></i></div>
+          <h3>Colaboradores</h3>
+          <ul>
+            <li><i class="fas fa-check"></i> Mayor motivación y engagement</li>
+            <li><i class="fas fa-check"></i> Comunicación más empática</li>
+            <li><i class="fas fa-check"></i> Reconocimiento visible</li>
+            <li><i class="fas fa-check"></i> Sentimiento de pertenencia</li>
+          </ul>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fas fa-chalkboard-user"></i></div>
+          <h3>Supervisores</h3>
+          <ul>
+            <li><i class="fas fa-check"></i> Visibilidad del clima en tiempo real</li>
+            <li><i class="fas fa-check"></i> Alertas tempranas de desmotivación</li>
+            <li><i class="fas fa-check"></i> Fortalecimiento del liderazgo</li>
+            <li><i class="fas fa-check"></i> Data para decisiones estratégicas</li>
+          </ul>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fas fa-building"></i></div>
+          <h3>Empresas</h3>
+          <ul>
+            <li><i class="fas fa-check"></i> Reducción de rotación (-42%)</li>
+            <li><i class="fas fa-check"></i> Mejora del clima laboral</li>
+            <li><i class="fas fa-check"></i> Mayor compromiso organizacional</li>
+            <li><i class="fas fa-check"></i> Incremento en productividad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIOS ==================== -->
+  <section id="testimonios" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="fas fa-comment-dots"></i>
+          <span>Voces reales</span>
+        </div>
+        <h2>Lo que dicen de <span class="gradient-text">YouLeader</span></h2>
+        <p>Historias de transformación desde la operación diaria</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left quote-icon"></i>
+          <p class="testimonial-text">"Ahora siento que mi opinión sí importa dentro del equipo. El feedback ya no es unidireccional, es una conversación real."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MA</div>
+            <div class="author-details">
+              <h4>María Arroyo</h4>
+              <span>Asesora de atención al cliente · 3 años</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left quote-icon"></i>
+          <p class="testimonial-text">"Puedo identificar rápidamente cómo se siente mi equipo. Las alertas emocionales me han permitido actuar antes de que surjan problemas."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CR</div>
+            <div class="author-details">
+              <h4>Carlos Rivera</h4>
+              <span>Supervisor de operaciones · 40 agentes</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left quote-icon"></i>
+          <p class="testimonial-text">"Implementamos YouLeader hace 6 meses y la rotación bajó un 35%. Es la mejor inversión en cultura que hemos hecho."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">LV</div>
+            <div class="author-details">
+              <h4>Laura Vélez</h4>
+              <span>Gerente de RRHH · ContactCenterPlus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACTO / CTA FINAL ==================== -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-content">
+          <div class="contact-tag">Comienza hoy</div>
+          <h2>
+            El liderazgo no solo se mide en resultados.<br>
+            <span class="gradient-text">También se mide en cómo haces sentir a tu equipo.</span>
+          </h2>
+          <p>Únete a más de 50 empresas que ya transformaron su cultura con YouLeader.</p>
+          
+          <form class="contact-form" id="demoForm">
+            <div class="form-row">
+              <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Nombre completo" required>
+              </div>
+              <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Correo corporativo" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <i class="fas fa-building"></i>
+                <input type="text" placeholder="Empresa">
+              </div>
+              <div class="form-group">
+                <i class="fas fa-phone"></i>
+                <input type="tel" placeholder="Teléfono">
+              </div>
+            </div>
+            <button type="submit" class="btn-primary btn-block">
+              Solicitar demo gratuita
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+          <p class="form-note">✅ Demo gratuita · Sin compromiso · Implementación en 7 días · Soporte 24/7</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-footer">
+            <span class="logo-icon">💙</span>
+            <span>You<span class="logo-highlight">Leader</span></span>
+          </div>
+          <p>Transformando el liderazgo emocional en la industria del contact center.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="#plataforma">¿Cómo funciona?</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#">Precios</a></li>
+            <li><a href="#">Seguridad y privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Casos de éxito</a></li>
+            <li><a href="#">Webinars</a></li>
+            <li><a href="#">Guía de liderazgo</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p><i class="fas fa-envelope"></i> contacto@youleader.com</p>
+          <p><i class="fas fa-phone-alt"></i> +54 11 5236-9800</p>
+          <p><i class="fas fa-map-marker-alt"></i> Buenos Aires · Madrid · Bogotá</p>
+          <p><i class="fas fa-clock"></i> Lunes a Viernes · 9am - 6pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 YouLeader · Todos los derechos reservados · Hecho con 💙 para equipos de alto rendimiento</p>
+        <div class="footer-legal">
+          <a href="#">Política de privacidad</a>
+          <span>|</span>
+          <a href="#">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
